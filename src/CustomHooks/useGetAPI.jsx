@@ -17,7 +17,7 @@ export default function APIProvider({ children }) {
 
     // const api = "http://localhost:8000"
     // const api = "https://apmeetserver.glitch.me"
-    const api = "http://ec2-13-201-129-30.ap-south-1.compute.amazonaws.com:3001"
+    const api = "https://quickmeet.publicvm.com"
 
 
     return <APIContext.Provider value={api}>
