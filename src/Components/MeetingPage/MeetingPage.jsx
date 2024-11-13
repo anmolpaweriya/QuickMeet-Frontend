@@ -64,32 +64,35 @@ export default function MeetingPage({ roomId }) {
     const [enabledMedia, setEnabledMedia] = useState({ video: false, audio: false, screenShare: false })
     const [usersList, setUsersList] = useState([])
     const [selectedMainStream, setSelectedMainStream] = useState({})
+
+    
+
     const peerOptions = {
-        iceServers: [
+        iceServers:  [
             {
-                urls: "stun:stun.relay.metered.ca:80",
+              urls: "stun:stun.relay.metered.ca:80",
             },
             {
-                urls: "turn:standard.relay.metered.ca:80",
-                username: "3a9f495b2209193e9a5abb5d",
-                credential: "mappKpEqTrkVEKR+",
+              urls: "turn:global.relay.metered.ca:80",
+              username: "2ad699eea1f2f61b1f11958b",
+              credential: "5tcqmBTXblTRGu/p",
             },
             {
-                urls: "turn:standard.relay.metered.ca:80?transport=tcp",
-                username: "3a9f495b2209193e9a5abb5d",
-                credential: "mappKpEqTrkVEKR+",
+              urls: "turn:global.relay.metered.ca:80?transport=tcp",
+              username: "2ad699eea1f2f61b1f11958b",
+              credential: "5tcqmBTXblTRGu/p",
             },
             {
-                urls: "turn:standard.relay.metered.ca:443",
-                username: "3a9f495b2209193e9a5abb5d",
-                credential: "mappKpEqTrkVEKR+",
+              urls: "turn:global.relay.metered.ca:443",
+              username: "2ad699eea1f2f61b1f11958b",
+              credential: "5tcqmBTXblTRGu/p",
             },
             {
-                urls: "turns:standard.relay.metered.ca:443?transport=tcp",
-                username: "3a9f495b2209193e9a5abb5d",
-                credential: "mappKpEqTrkVEKR+",
+              urls: "turns:global.relay.metered.ca:443?transport=tcp",
+              username: "2ad699eea1f2f61b1f11958b",
+              credential: "5tcqmBTXblTRGu/p",
             },
-        ],
+        ]
 
     }
 
