@@ -65,43 +65,42 @@ export default function MeetingPage({ roomId }) {
     const [usersList, setUsersList] = useState([])
     const [selectedMainStream, setSelectedMainStream] = useState({})
 
-    
 
-    const peerOptions = {
-        iceServers:  [
-            {
-              urls: "stun:stun.relay.metered.ca:80",
-            },
-            {
-              urls: "turn:global.relay.metered.ca:80",
-              username: "2ad699eea1f2f61b1f11958b",
-              credential: "5tcqmBTXblTRGu/p",
-            },
-            {
-              urls: "turn:global.relay.metered.ca:80?transport=tcp",
-              username: "2ad699eea1f2f61b1f11958b",
-              credential: "5tcqmBTXblTRGu/p",
-            },
-            {
-              urls: "turn:global.relay.metered.ca:443",
-              username: "2ad699eea1f2f61b1f11958b",
-              credential: "5tcqmBTXblTRGu/p",
-            },
-            {
-              urls: "turns:global.relay.metered.ca:443?transport=tcp",
-              username: "2ad699eea1f2f61b1f11958b",
-              credential: "5tcqmBTXblTRGu/p",
-            },
-        ]
-
-    }
 
     // const peerOptions = {
-    //     host: "wemeet.click"
-    //     , port: 8000,
-    //     path: '/peerjs',
-    //     secure: true
+    //     iceServers: [
+    //         {
+    //             urls: "stun:stun.relay.metered.ca:80",
+    //         },
+    //         {
+    //             urls: "turn:global.relay.metered.ca:80",
+    //             username: "2ad699eea1f2f61b1f11958b",
+    //             credential: "5tcqmBTXblTRGu/p",
+    //         },
+    //         {
+    //             urls: "turn:global.relay.metered.ca:80?transport=tcp",
+    //             username: "2ad699eea1f2f61b1f11958b",
+    //             credential: "5tcqmBTXblTRGu/p",
+    //         },
+    //         {
+    //             urls: "turn:global.relay.metered.ca:443",
+    //             username: "2ad699eea1f2f61b1f11958b",
+    //             credential: "5tcqmBTXblTRGu/p",
+    //         },
+    //         {
+    //             urls: "turns:global.relay.metered.ca:443?transport=tcp",
+    //             username: "2ad699eea1f2f61b1f11958b",
+    //             credential: "5tcqmBTXblTRGu/p",
+    //         },
+    //     ]
     // }
+
+    const peerOptions = {
+        host: "peerjs.publicvm.com",
+        port: 443,
+        key: "p33r",
+        secure: true
+    }
 
 
 
